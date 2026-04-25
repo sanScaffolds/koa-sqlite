@@ -1,4 +1,4 @@
-import { ErrorCode } from "./errorCodes";
+import { ErrorCode } from "./ErrorCodes";
 
 export class AppError extends Error {
   public code: number;

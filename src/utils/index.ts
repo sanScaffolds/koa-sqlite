@@ -1,5 +1,5 @@
 import AppError from "./AppError";
-import { ErrorCode, ErrorMessage } from "./errorCodes";
+import { ErrorCode, ErrorMessage } from "./ErrorCodes";
 import Response from "./Response";
 import logger from "./logger";
 

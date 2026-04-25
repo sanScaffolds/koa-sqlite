@@ -1,5 +1,5 @@
 const path = require("path");
-const config = require("./knexfile.config");
+const config = require("./src/config");
 
 module.exports = {
   development: {

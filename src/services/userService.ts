@@ -1,6 +1,6 @@
 import User from "../models/User";
 import { AppError } from "../utils";
-import { ErrorCode } from "../utils/errorCodes";
+import { ErrorCode } from "../utils/ErrorCodes";
 import { User as UserType } from "../types";
 
 interface UserCreateData {
