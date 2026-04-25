@@ -2,20 +2,25 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Koa + SQLite 后端项目骨架",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & nodemon dist/index.js",
     "migrate": "knex migrate:latest",
     "migrate:rollback": "knex migrate:rollback",
     "seed": "knex seed:run"
   },
-  "keywords": ["koa", "sqlite", "backend"],
+  "keywords": [
+    "koa",
+    "sqlite",
+    "backend"
+  ],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "better-sqlite3": "^13.0.0",
+    "better-sqlite3": "^12.9.0",
     "dotenv": "^17.4.2",
     "joi": "^17.13.0",
     "knex": "^3.1.0",
@@ -25,6 +30,12 @@
     "winston": "^3.17.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "@types/koa": "^3.0.2",
+    "@types/koa-bodyparser": "^4.3.13",
+    "@types/koa-router": "^7.4.9",
+    "@types/node": "^25.6.0",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   }
 }
