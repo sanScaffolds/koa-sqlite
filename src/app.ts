@@ -1,8 +1,8 @@
-import Koa from "koa";
-import bodyParser from "koa-bodyparser";
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
 
-import { errorHandler, loggerMiddleware } from "./middlewares";
-import router from "./routes";
+import { errorHandler, loggerMiddleware } from './middlewares';
+import router from './routes';
 
 const app = new Koa();
 
